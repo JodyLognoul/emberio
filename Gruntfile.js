@@ -27,8 +27,22 @@ module.exports = function (grunt) {
         // Project settings
         config: config,
 
+        emberTemplates: {
+            compile: {
+                options: {
+                    templateBasePath: '<%= config.app %>/templates'
+                },
+                files: {
+                    '<%= config.app %>/scripts/templates.js': ['**/*.hbs']
+                }
+            }
+        },
         // Watches files for changes and runs tasks based on the changed files
         watch: {
+            emberTemplates: {
+                files: '<%= config.app %>/templates/**/*.hbs',
+                tasks: ['emberTemplates']
+            },
             bower: {
                 files: ['bower.json'],
                 tasks: ['bowerInstall']
@@ -134,6 +148,7 @@ module.exports = function (grunt) {
                 'Gruntfile.js',
                 '<%= config.app %>/scripts/{,*/}*.js',
                 '!<%= config.app %>/scripts/vendor/*',
+                '!<%= config.app %>/scripts/templates.js',
                 'test/spec/{,*/}*.js'
             ]
         },
@@ -389,6 +404,7 @@ module.exports = function (grunt) {
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
+        'emberTemplates',
         'concat',
         'cssmin',
         'uglify',
