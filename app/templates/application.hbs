@@ -1,4 +1,4 @@
-<nav class="eg-navbar headroom" role="navigation">
+<nav class="eg-navbar-top" role="navigation">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -8,14 +8,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand" href="#">EMBERIO</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-right navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>{{#link-to 'events'}}<i class="fa fa-lg fa-calendar"></i> {{/link-to}}</li>                        
-                <li>{{#link-to 'events.new'}}<i class="fa fa-lg fa-plus"></i> {{/link-to}}</li>                        
+                <li>{{#link-to 'event.new'}}<i class="fa fa-lg fa-plus"></i> {{/link-to}}</li>                        
                 <li>{{#link-to 'users'}}<i class="fa fa-lg fa-user"></i> {{/link-to}}</li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -24,3 +24,13 @@
 <div class="eg-container">
 {{outlet}}
 </div>
+<!--nav class="eg-navbar-bottom" role="navigation">
+    <div class="container-fluid">
+        <form class="navbar-form" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</nav-->

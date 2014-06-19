@@ -1,10 +1,23 @@
 @import settings
 @import bootstrap
 
+// =SETTINGS
+$row-event-color: #eee
+$blue: #5d8fae
+$green: #5f6046
+$brown: #60403e
+
+// =GENERAL
+body,html
+	height: 100%
 body
 	margin-top: 90px
+ul
+	list-style: none	
+	padding: 0
 
-.eg-navbar
+// =NAVBAR
+.eg-navbar-top
 	@extend .navbar
 	@extend .navbar-default
 	@extend .navbar-fixed-top
@@ -14,6 +27,63 @@ body
 	.navbar-brand
 		font-size: 18px
 
+.eg-navbar-bottom
+	@extend .navbar
+	@extend .navbar-default
+	@extend .navbar-fixed-bottom
+	min-height: 40px
+
 .eg-container
 	@extend .container
 	width: 100%
+
+// =EMBERJS
+
+// =EVENTS
+.row-ev
+	@extend .row
+	padding: 10px
+	border-top: 1px solid $row-event-color
+	&:hover
+		background-color: #eee
+
+.col-pics
+	@extend .col-xs-6
+	@extend .col-sm-4
+	@extend .col-md-4
+	@extend .col-lg-3
+.col-infos
+	@extend .col-xs-14
+	@extend .col-sm-18
+	@extend .col-md-18
+	@extend .col-lg-19
+.col-view
+	@extend .col-xs-4
+	@extend .col-sm-2
+	@extend .col-md-2
+	@extend .col-lg-2
+	margin-top: 20px
+
+.info-title h3
+	margin: 5px 0
+	font-size: 16px
+
+.ev-btn
+	font-size: 20px
+	color: #ccc
+
+.ev-btn-view
+	font-size: 40px
+	color: #ccc
+.ev-map-link
+	font-size: 12px
+	color: $blue
+.img-ev
+	@extend .img-rounded
+	@extend .img-responsive
+
+.img-host	
+	@extend .img-circle
+
+
+
