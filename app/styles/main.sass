@@ -10,32 +10,35 @@ $brown: #60403e
 // =GENERAL
 body,html
 	height: 100%
-body
-	margin-top: 90px
 ul
 	list-style: none	
 	padding: 0
 
 // =NAVBAR
-.eg-navbar-top
+%eg-navbar
 	@extend .navbar
-	@extend .navbar-default
-	@extend .navbar-fixed-top
 	text-transform: uppercase
+	border-radius: 0
+	margin-bottom: 0
 	a,.dropdown
 		font-size: 20px
 	.navbar-brand
 		font-size: 18px
 
-.eg-navbar-bottom
-	@extend .navbar
+.eg-navbar-main
+	@extend %eg-navbar
 	@extend .navbar-default
-	@extend .navbar-fixed-bottom
-	min-height: 40px
+	
+.eg-navbar-event
+	@extend %eg-navbar
+	@extend .navbar-default
 
-.eg-container
+.eg-container,
+.eg-container-event
 	@extend .container
-	width: 100%
+
+.eg-container-event
+	padding-top: 10px
 
 // =EMBERJS
 
@@ -84,6 +87,3 @@ ul
 
 .img-host	
 	@extend .img-circle
-
-
-

@@ -5,19 +5,28 @@ var App = Ember.Application.create({
 });
 
 // ROUTES
-App.Router.map(function() {
-    this.route('events');
-    this.route('event.new', { path: '/event/new'});
-    this.route('event', { path: '/event/:eventId'});
-});
 
 App.Router.map(function() {
+    this.route('home', { path: '/events'});
+    this.route('events', { path: '/'});
+    this.route('event.new', { path: '/event/new'});
+    this.route('event', { path: '/event/:eventId'});
     this.resource('users');
+});
+
+App.HomeRoute = Ember.Route.extend({
+    beforeModel: function() {
+        this.transitionTo('events');
+    }
 });
 
 App.EventRoute = Ember.Route.extend({
     model: function(params) {
-        return this.store.find('post', params.eventId);
+        return Ember.$.getJSON('http://local.egam.io/api/event/' + params.eventId).then(function(data) {
+            data.img = 'http://lorempixel.com/200/200/city/' + (data.id - 1) % 10;
+            data.imghost = 'http://lorempixel.com/30/30/people/' + (data.id - 1) % 10;
+            return data;
+        });
     }
 });
 

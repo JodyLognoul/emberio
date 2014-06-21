@@ -1,29 +1,55 @@
-<ul>
-	{{#each}}
-	<li class="row-ev">
-		<div class="col-pics">
-			<img {{bind-attr src=img}} class="img-ev" alt="">
+<nav class="eg-navbar-main" role="navigation">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">EMBERIO</a>
 		</div>
-		<div class="col-infos">
-			<ul class="list-inline info-host">
-				<li><img {{bind-attr src=imghost}} class="img-host" alt=""></li>
-				<li><h4 class="host-username">{{event_user.[0].username}}</h4></li>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li>{{#link-to 'events'}}<i class="fa fa-lg fa-calendar"></i> {{/link-to}}</li>                        
+				<li>{{#link-to 'event.new'}}<i class="fa fa-lg fa-plus"></i> {{/link-to}}</li>                        
+				<li>{{#link-to 'users'}}<i class="fa fa-lg fa-user"></i> {{/link-to}}</li>
 			</ul>
-			<div class="info-title">
-				<h3>{{title}}</h3>
+			<p class="navbar-text">Signed in as Mark Otto</p>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+<div class="eg-container">
+	<ul>
+		{{#each}}
+		<li class="row-ev">
+			<div class="col-pics">
+				<img {{bind-attr src=img}} class="img-ev" alt="">
 			</div>
-			<div class="info-others">
-				<ul class="list-inline">
-					<li><a href="" class="ev-btn"><i class="fa fa-eye"></i></a></li>
-					<li><a href="" class="ev-btn"><i class="fa fa-star"></i></a></li>
-					<li><a href="" class="ev-btn"><i class="fa fa-share-square-o"></i></a></li>
-					<li><a href="" class="ev-btn"><i class="fa fa-map-marker"></i> <span class="ev-map-link">{{address.full}}</span></a></li>
+			<div class="col-infos">
+				<ul class="list-inline info-host">
+					<li><img {{bind-attr src=imghost}} class="img-host" alt=""></li>
+					<li><h4 class="host-username">{{event_user.[0].username}}</h4></li>
 				</ul>
+				<div class="info-title">
+					<h3>{{title}}</h3>
+				</div>
+				<div class="info-others">
+					<ul class="list-inline">
+						<li><a href="" class="ev-btn"><i class="fa fa-eye"></i></a></li>
+						<li><a href="" class="ev-btn"><i class="fa fa-star"></i></a></li>
+						<li><a href="" class="ev-btn"><i class="fa fa-share-square-o"></i></a></li>
+						<li><a href="" class="ev-btn"><i class="fa fa-map-marker"></i> <span class="ev-map-link">{{address.full}}</span></a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div class="col-view pull-right">
-			<a href="" class="ev-btn-view"><i class="fa fa-chevron-circle-right"></i></a>
-		</div>
-	</li>
-	{{/each}}
-</ul>
+			<div class="col-view pull-right">
+				{{#link-to 'event' id class="ev-btn-view"}}<i class="fa fa-chevron-circle-right"></i>{{/link-to}}			
+			</div>
+		</li>
+		{{/each}}
+	</ul>
+</div>

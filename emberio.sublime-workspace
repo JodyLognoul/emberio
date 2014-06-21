@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"eve",
+				"eventId"
+			],
+			[
+				"col",
+				"col-pics"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"mi",
+				"middle"
+			],
+			[
 				"font",
 				"font-size"
 			],
@@ -30,10 +46,6 @@
 			[
 				"bowe",
 				"bower_components"
-			],
-			[
-				"mar",
-				"margin-bottom"
 			],
 			[
 				"fon",
@@ -188,10 +200,6 @@
 				"eventdate"
 			],
 			[
-				"eve",
-				"event_date"
-			],
-			[
 				"qu",
 				"query"
 			],
@@ -234,10 +242,6 @@
 			[
 				"tem",
 				"template"
-			],
-			[
-				"col",
-				"collection"
 			],
 			[
 				"index",
@@ -510,44 +514,24 @@
 			[
 				"bac",
 				"background-color"
-			],
-			[
-				"gmap",
-				"gmapString"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/scripts/main.js",
+			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 478,
+				"buffer_size": 1502,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/templates/events.hbs",
+			"file": "bower.json",
 			"settings":
 			{
-				"buffer_size": 434,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/jody/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-			"settings":
-			{
-				"buffer_size": 67,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/main.sass",
-			"settings":
-			{
-				"buffer_size": 279,
+				"buffer_size": 266,
 				"line_ending": "Unix"
 			}
 		}
@@ -559,20 +543,20 @@
 		"selected_items":
 		[
 			[
-				"ins",
-				"Package Control: Install Package"
+				"rein",
+				"Indentation: Reindent Lines"
 			],
 			[
 				"remo",
 				"Package Control: Remove Package"
 			],
 			[
-				"emme",
-				"Set Syntax: Emmet"
+				"ins",
+				"Package Control: Install Package"
 			],
 			[
-				"rein",
-				"Indentation: Reindent Lines"
+				"emme",
+				"Set Syntax: Emmet"
 			],
 			[
 				"insta",
@@ -988,26 +972,40 @@
 	},
 	"file_history":
 	[
-		"/Users/jody/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
-		"/Users/jody/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
-		"/private/var/www/dev/emberio/app/templates/application.hbs",
+		"/private/var/www/dev/emberio/app/scripts/main.js",
 		"/private/var/www/dev/emberio/Gruntfile.js",
 		"/private/var/www/dev/emberio/package.json",
+		"/private/var/www/dev/emberio/emberio.sublime-project",
+		"/private/var/www/dev/emberio/app/index.html",
+		"/private/var/www/dev/emberio/app/styles/main.sass",
+		"/private/var/www/dev/emberio/app/.htaccess",
+		"/private/var/www/dev/emberio/dist/.htaccess",
+		"/private/var/www/dev/emberio/app/styles/_settings.sass",
+		"/private/var/www/dev/emberio/app/templates/events.hbs",
+		"/private/var/www/dev/emberio/app/templates/event.hbs",
+		"/private/var/www/dev/emberio/app/templates/application.hbs",
+		"/private/etc/hosts",
+		"/private/etc/apache2/extra/httpd-vhosts.conf",
+		"/private/var/www/dev/emberio/bower_components/jquery/src/effects/animatedSelector.js",
+		"/private/var/www/dev/emberio/bower_components/jquery/src/selector.js",
+		"/Users/jody/Downloads/albums.html",
+		"/Users/jody/Downloads/bloggr-client-master/index.html",
+		"/private/var/www/dev/emberio/bower_components/fontawesome/scss/_path.scss",
 		"/Users/jody/Downloads/bloggr-client-master/js/app.js",
+		"/private/var/www/dev/emberio/bower_components/handlebars/handlebars.js",
+		"/private/var/www/dev/emberio/bower_components/ember/ember.js",
+		"/private/var/www/dev/emberio/bower_components/ember/ember.min.js",
+		"/private/var/www/dev/emberio/bower_components/ember/ember.prod.js",
+		"/Users/jody/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/jody/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jody/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings",
 		"/private/var/www/dev/emberio/bower.json",
 		"/private/var/www/dev/emberio/app/404.html",
 		"/private/var/www/dev/emberio/app/templates/events/new.hbs",
 		"/private/var/www/dev/emberio/app/templates/events/error.hbs",
-		"/private/var/www/dev/emberio/app/styles/_settings.sass",
-		"/private/var/www/dev/emberio/app/scripts/main.js",
-		"/private/var/www/dev/emberio/app/styles/main.sass",
-		"/private/var/www/dev/emberio/bower_components/jquery/src/selector.js",
 		"/Users/jody/Downloads/bloggr-client-master/css/style.css",
 		"/private/var/www/dev/emberio/bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_responsive-embed.scss",
-		"/private/var/www/dev/emberio/app/index.html",
-		"/private/var/www/dev/emberio/app/templates/events.hbs",
 		"/private/var/www/dev/emberio/app/templates/users.hbs",
-		"/Users/jody/Downloads/bloggr-client-master/index.html",
 		"/private/var/www/dev/emberio/app/styles/todo.css",
 		"/private/var/www/dev/emberio/app/scripts/templates.js",
 		"/private/var/www/dev/emberio/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/glyphicons-halflings-regular.svg",
@@ -1019,19 +1017,14 @@
 		"/private/var/www/dev/emberio/app/index.handlebars.html",
 		"/private/var/www/dev/emberio/app/index.handlebars",
 		"/Users/jody/Library/Application Support/Sublime Text 3/Packages/Emmet/Default (OSX).sublime-keymap",
-		"/Users/jody/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/jody/Library/Application Support/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
-		"/private/var/www/dev/emberio/bower_components/ember/ember.js",
-		"/private/var/www/dev/emberio/emberio.sublime-project",
 		"/private/var/www/dev/emberio/bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_input-groups.scss",
 		"/private/var/www/dev/emberio/app/scripts/router.js",
-		"/private/etc/apache2/extra/httpd-vhosts.conf",
 		"/private/var/www/dev/cheezy/package.json",
 		"/private/var/www/dev/cheezy/Gruntfile.js",
 		"/private/var/www/dev/cheezy/bower.json",
 		"/private/var/www/dev/cheezy/yeomanGruntfile.js",
 		"/private/var/www/dev/cheezy/build.sh",
-		"/Users/jody/Downloads/albums.html",
 		"/private/var/www/dev/cheezy/public/app/styles/_settings.sass",
 		"/private/var/www/dev/cheezy/public/bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_variables.scss",
 		"/private/var/www/dev/cheezy/public/bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss",
@@ -1106,16 +1099,7 @@
 		"/private/var/www/dev/me.egam.io/dist/styles/4703bbac.main.css",
 		"/private/var/www/dev/me.egam.io/app/bower_components/modernizr/test/caniuse_files/style.css",
 		"/private/var/www/dev/me.egam.io/.tmp/styles/dot.css",
-		"/private/var/www/dev/me.egam.io/node_modules/grunt/lib/grunt/task.js",
-		"/private/var/www/dev/me.egam.io/node_modules/grunt/lib/util/task.js",
-		"/private/var/www/dev/me.egam.io/.tmp/styles/main.css",
-		"/private/var/www/dev/me.egam.io/dist/styles/tidy.css",
-		"/private/var/www/dev/me.egam.io/dist/css/tidy.css",
-		"/private/var/www/dev/me.egam.io/app/scripts/nav.js",
-		"/private/var/www/dev/me.egam.io/app/styles/nav.sass",
-		"/private/var/www/dev/me.egam.io/app/styles/dot.sass",
-		"/private/var/www/dev/me.egam.io/package.json",
-		"/private/var/www/dev/me.egam.io/.gitignore"
+		"/private/var/www/dev/me.egam.io/node_modules/grunt/lib/grunt/task.js"
 	],
 	"find":
 	{
@@ -1204,6 +1188,52 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"useminPrepare",
+			"compass",
+			"useminPrepare",
+			"concat",
+			"config.dist",
+			"useminPrepare",
+			"usemin",
+			"copy",
+			"sass",
+			"concurrent",
+			"useminPrepare",
+			"mod_rewrite",
+			"/4",
+			"Redirect",
+			"config.app",
+			"connect",
+			"errors",
+			"emberTemplates",
+			"0.0.0",
+			"resource",
+			"12 ",
+			"12",
+			"100",
+			"event",
+			"	\n",
+			"EVENT",
+			"event",
+			"Math.random()",
+			"href",
+			"List",
+			"list",
+			"list-inline",
+			"div",
+			"navbar",
+			"50",
+			"text-",
+			"<a class=\"albumThumbLink uiMediaThumb uiScrollableThumb\" href=\"https://www.facebook.com/media/set/(.*?)type=3\" tabindex=\"-1\">",
+			"hei",
+			"=",
+			"// ",
+			"md",
+			"'each'",
+			"each",
+			"watch",
+			"wa",
+			"emberTemplates",
 			"lorem8",
 			"img",
 			"grid-float-breakpoint",
@@ -1285,58 +1315,12 @@
 			"<a class=\"albumThumbLink uiMediaThumb uiScrollableThumb\" href=\"https://www.facebook.com/media/set/(.*?)type=3\" tabindex=\"-1\">",
 			"navbar",
 			"$brand-warning",
-			"$brand-success:",
-			"navbar-default-link-color",
-			"$navbar-default-bg",
-			"navbar-default-color",
-			"navbar-height",
-			"navbar-default-bg",
-			"navbar",
-			";",
-			"jumbotron-bg",
-			"jumbotron",
-			"red",
-			"$gray-lighter",
-			"jumbotron",
-			"type=\"button\" ",
-			"navbar",
-			"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi commodi quidem asperiores, exercitationem impedit iste consequuntur enim! Amet reiciendis nam perferendis debitis ab ipsum facere, incidunt eligendi ad eius omnis magnam aliquam deserunt placeat fuga officia quod fugiat exercitationem tempore, quo itaque ut quae, aliquid. Suscipit natus placeat tenetur corporis iste mollitia quas quasi voluptates dignissimos dolor cum, aliquid nobis unde tempora quidem similique nostrum pariatur possimus minus sint excepturi doloremque. Provident, ex expedita maxime ullam nisi, cumque similique animi quia maiores unde tempora ut voluptatibus neque ab officiis. Magnam molestiae necessitatibus doloremque hic maiores consequatur, nobis placeat voluptatum tenetur architecto totam aliquam pariatur, illo repellendus! Repellendus voluptatem atque, delectus nihil est recusandae suscipit? Voluptate error, molestias! Necessitatibus voluptatem officia fugiat harum aperiam velit fuga id sit molestias temporibus, quos vitae, molestiae ducimus. Assumenda non pariatur modi veritatis autem magnam, sequi deserunt dolores totam aperiam! Sequi at nesciunt alias! Architecto?</p>\n		",
-			"family",
-			"font",
-			"button",
-			"a",
-			"navbar",
-			"#777",
-			"navbar",
-			"// //",
-			"// // ",
-			"primary",
-			"$gray-light",
-			"$",
-			"$navbar-default-bg",
-			"concurrent",
-			"compass:",
-			"../",
-			"sass:se",
-			"concurrent",
-			"clean",
-			".tmp/styles/",
-			"autoprefixer:",
-			"concurrent",
-			"autoprefixer",
-			"newer",
-			"concurrent",
-			"clean",
-			"watch",
-			"connect",
-			"connex",
-			"files: [{\n                    expand: true,\n                    cwd: '<%= config.app %>/styles',\n                    src: ['*.scss', '*.sass'],\n                    dest: '.tmp/styles',\n                    ext: '.css'\n                }]",
-			"sass:"
+			"$brand-success:"
 		],
 		"highlight": false,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
 			"lorem8",
@@ -1387,19 +1371,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/scripts/main.js",
+					"file": "app/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 478,
+						"buffer_size": 1502,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								454,
-								454
+								548,
+								548
 							]
 						],
 						"settings":
@@ -1407,42 +1391,34 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -1450,161 +1426,17 @@
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/templates/events.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 434,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								102,
-								102
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
+								"bh_tag_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
-							],
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/jody/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 67,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								64,
-								64
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close"
+								"bh_double_quote_close"
 							],
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"syntax": "Packages/Handlebars/Handlebars.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1616,20 +1448,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/styles/main.sass",
+					"buffer": 1,
+					"file": "bower.json",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 279,
+						"buffer_size": 266,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								278,
-								278
+								234,
+								234
 							]
 						],
 						"settings":
@@ -1637,42 +1469,34 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
@@ -1680,15 +1504,25 @@
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
-								"bh_tag_close"
+								"bh_tag_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close"
 							],
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1753,23 +1587,59 @@
 		"selected_items":
 		[
 			[
-				".js",
+				"inde",
+				"emberio/app/index.html"
+			],
+			[
+				"mainjs",
 				"emberio/app/scripts/main.js"
 			],
 			[
-				"se",
+				"grunt",
+				"emberio/Gruntfile.js"
+			],
+			[
+				"grun",
+				"emberio/Gruntfile.js"
+			],
+			[
+				"app",
+				"emberio/app/templates/application.hbs"
+			],
+			[
+				"_s",
 				"emberio/app/styles/_settings.sass"
 			],
 			[
-				"main",
-				"emberio/app/styles/main.sass"
+				"mains",
+				"emberio/app/scripts/main.js"
 			],
 			[
 				"sett",
 				"emberio/app/styles/_settings.sass"
 			],
 			[
-				"mains",
+				"se",
+				"emberio/app/styles/_settings.sass"
+			],
+			[
+				"pa",
+				"emberio/package.json"
+			],
+			[
+				"handle",
+				"emberio/bower_components/handlebars/handlebars.js"
+			],
+			[
+				"emberjs",
+				"emberio/bower_components/ember/ember.js"
+			],
+			[
+				".js",
+				"emberio/app/scripts/main.js"
+			],
+			[
+				"main",
 				"emberio/app/styles/main.sass"
 			],
 			[
@@ -1779,14 +1649,6 @@
 			[
 				"bowe",
 				"emberio/bower.json"
-			],
-			[
-				"inde",
-				"bloggr-client-master/index.html"
-			],
-			[
-				"grunt",
-				"emberio/Gruntfile.js"
 			],
 			[
 				"pac",
@@ -1967,10 +1829,6 @@
 			[
 				"routerjs",
 				"js/app/event/index/router.js"
-			],
-			[
-				"mainjs",
-				"js/app/event/index/main.js"
 			],
 			[
 				"mas",
@@ -2239,30 +2097,6 @@
 			[
 				"datecss",
 				"public/css/vendor/datetimepicker/jquery.datetimepicker.css"
-			],
-			[
-				"createevente",
-				"app/database/migrations/2013_11_27_094807_create_event_table.php"
-			],
-			[
-				"address",
-				"app/database/seeds/AddressTableSeeder.php"
-			],
-			[
-				"eventnew",
-				"app/views/event/new.blade.php"
-			],
-			[
-				"createeve",
-				"app/database/migrations/2013_11_27_094807_create_event_table.php"
-			],
-			[
-				"seedevent",
-				"app/database/seeds/EventTableSeeder.php"
-			],
-			[
-				"migrateevent",
-				"app/database/migrations/2013_11_27_094807_create_event_table.php"
 			]
 		],
 		"width": 0.0
@@ -2274,7 +2108,7 @@
 		[
 			[
 				"",
-				"/private/var/www/dev/cheezy/cheezy.sublime-project"
+				"/private/var/www/dev/egam.io/egam.io.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -2293,7 +2127,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 257.0,
 	"status_bar_visible": true,
 	"template_settings":
