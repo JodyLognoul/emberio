@@ -9,11 +9,14 @@ $green: #5f6046
 $brown: #60403e
 $row-event-color: #eee
 $font-size: 16px
+$font-family: 'Helvetica Neue', Helvetica, Helvetica, Arial, sans-serif
 
 // =GENERAL
 body,html
 	height: 100%
 	font-size: $font-size
+	font-family: $font-family
+	font-weight: 200
 ul
 	list-style: none	
 	padding: 0
@@ -24,7 +27,7 @@ ul
 	border-radius: 0
 	margin-bottom: 0
 	a,.dropdown
-		font-size: 1em
+		font-size: 0.9em
 	.navbar-brand
 		font-size: 1.2em
 
@@ -35,7 +38,9 @@ ul
 	
 .eg-navbar-event
 	@extend %eg-navbar
-
+	@extend %eg-navbar-custom-style-main
+	@extend %eg-navbar-custom-size-main
+	
 .eg-container,
 .eg-container-event
 	@extend .container
@@ -82,7 +87,7 @@ ul
 	font-size: 3em
 	color: #ccc
 .ev-map-link
-	font-size: 0.5em
+	font-size: 0.6em
 	color: $blue
 .img-ev
 	@extend .img-rounded

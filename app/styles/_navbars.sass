@@ -6,25 +6,26 @@
 
 /*==========  SIZES  ==========*/
 $main-grid-float-breakpoint-max	: 270px
-$main-height					: 100px
+$main-height					: 60px
 
 /*==========  COLORS  ==========*/
 $__main-bg 					: #323C3E
-$__main-links				: #fff
+$__main-links				: #ADADAD
+$__main-links-hover-color	: #fff
 /* ____________________________ */
 $main-bg					: $__main-bg
 $main-border				: darken($main-bg, 6.5%)
 $main-brand-color			: $__main-links
-$main-brand-hover-bg		: #bada55
-$main-brand-hover-color		: #bada55
+$main-brand-hover-bg		: $__main-bg
+$main-brand-hover-color		: $__main-links-hover-color
 $main-color					: $__main-links
 $main-link-active-bg		: darken($main-bg, 6.5%)
-$main-link-active-color		: darken($__main-links, 50%)
+$main-link-active-color		: $__main-links-hover-color
 $main-link-color			: $__main-links
 $main-link-disabled-bg		: #bada55
 $main-link-disabled-color	: #bada55
-$main-link-hover-bg			: #bada55
-$main-link-hover-color		: #bada55
+$main-link-hover-bg			: darken($main-bg, 6.5%)
+$main-link-hover-color		: $__main-links-hover-color
 $main-toggle-border-color	: #bada55
 $main-toggle-hover-bg		: #bada55
 $main-toggle-icon-bar-bg	: #bada55

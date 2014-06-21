@@ -1,28 +1,26 @@
 /* global Ember */
+/* jshint camelcase: false */
+
 'use strict';
 var App = Ember.Application.create({
     rootElement: 'body'
 });
 
 // ROUTES
-
 App.Router.map(function() {
-    this.route('home', { path: '/events'});
-    this.route('events', { path: '/'});
-    this.route('event.new', { path: '/event/new'});
-    this.route('event', { path: '/event/:eventId'});
-    this.resource('users');
+    this.resource('main', { path:'/'}, function(){
+        this.route('events');
+    });
+    this.resource('event', { path:'/event/:event_id'}, function(){
+        this.route('edit');
+    });
+
 });
 
-App.HomeRoute = Ember.Route.extend({
-    beforeModel: function() {
-        this.transitionTo('events');
-    }
-});
 
 App.EventRoute = Ember.Route.extend({
     model: function(params) {
-        return Ember.$.getJSON('http://local.egam.io/api/event/' + params.eventId).then(function(data) {
+        return Ember.$.getJSON('http://local.egam.io/api/event/' + params.event_id).then(function(data) {
             data.img = 'http://lorempixel.com/200/200/city/' + (data.id - 1) % 10;
             data.imghost = 'http://lorempixel.com/30/30/people/' + (data.id - 1) % 10;
             return data;
@@ -30,7 +28,7 @@ App.EventRoute = Ember.Route.extend({
     }
 });
 
-App.EventsRoute = Ember.Route.extend({
+App.MainEventsRoute = Ember.Route.extend({
     model: function() {
         return Ember.$.getJSON('http://local.egam.io/api/event').then(function(data) {
             data.forEach(function(element, index){

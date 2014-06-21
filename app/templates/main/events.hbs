@@ -1,0 +1,31 @@
+<div class="eg-container">
+	<ul>
+		{{#each}}
+		<li class="row-ev">
+			<div class="col-pics">
+				<img {{bind-attr src=img}} class="img-ev" alt="">
+			</div>
+			<div class="col-infos">
+				<ul class="list-inline info-host">
+					<li><img {{bind-attr src=imghost}} class="img-host" alt=""></li>
+					<li><h4 class="host-username">{{event_user.[0].username}}</h4></li>
+				</ul>
+				<div class="info-title">
+					<h3>{{title}}</h3>
+				</div>
+				<div class="info-others">
+					<ul class="list-inline">
+						<li><a href="" class="ev-btn"><i class="fa fa-eye"></i></a></li>
+						<li><a href="" class="ev-btn"><i class="fa fa-star"></i></a></li>
+						<li><a href="" class="ev-btn"><i class="fa fa-share-square-o"></i></a></li>
+						<li><a href="" class="ev-btn"><i class="fa fa-map-marker"></i> <span class="ev-map-link">{{address.full}}</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-view">
+				{{#link-to 'event' this class="ev-btn-view"}}<i class="fa fa-chevron-circle-right"></i>{{/link-to}}			
+			</div>
+		</li>
+		{{/each}}
+	</ul>
+</div>
