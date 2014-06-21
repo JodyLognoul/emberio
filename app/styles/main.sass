@@ -1,15 +1,19 @@
 @import settings
+@import navbars
 @import bootstrap
 
 // =SETTINGS
-$row-event-color: #eee
+// colors
 $blue: #5d8fae
 $green: #5f6046
 $brown: #60403e
+$row-event-color: #eee
+$font-size: 16px
 
 // =GENERAL
 body,html
 	height: 100%
+	font-size: $font-size
 ul
 	list-style: none	
 	padding: 0
@@ -17,21 +21,20 @@ ul
 // =NAVBAR
 %eg-navbar
 	@extend .navbar
-	text-transform: uppercase
 	border-radius: 0
 	margin-bottom: 0
 	a,.dropdown
-		font-size: 20px
+		font-size: 1em
 	.navbar-brand
-		font-size: 18px
+		font-size: 1.2em
 
 .eg-navbar-main
 	@extend %eg-navbar
-	@extend .navbar-default
+	@extend %eg-navbar-custom-style-main
+	@extend %eg-navbar-custom-size-main
 	
 .eg-navbar-event
 	@extend %eg-navbar
-	@extend .navbar-default
 
 .eg-container,
 .eg-container-event
@@ -52,16 +55,16 @@ ul
 
 .col-pics
 	@extend .col-xs-6
-	@extend .col-sm-4
-	@extend .col-md-4
+	@extend .col-sm-3
+	@extend .col-md-3
 	@extend .col-lg-3
 .col-infos
-	@extend .col-xs-14
-	@extend .col-sm-18
-	@extend .col-md-18
+	@extend .col-xs-15
+	@extend .col-sm-19
+	@extend .col-md-19
 	@extend .col-lg-19
 .col-view
-	@extend .col-xs-4
+	@extend .col-xs-3
 	@extend .col-sm-2
 	@extend .col-md-2
 	@extend .col-lg-2
@@ -69,17 +72,17 @@ ul
 
 .info-title h3
 	margin: 5px 0
-	font-size: 16px
+	font-size: 1em
 
 .ev-btn
-	font-size: 20px
+	font-size: 1.2em
 	color: #ccc
 
 .ev-btn-view
-	font-size: 40px
+	font-size: 3em
 	color: #ccc
 .ev-map-link
-	font-size: 12px
+	font-size: 0.5em
 	color: $blue
 .img-ev
 	@extend .img-rounded

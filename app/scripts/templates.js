@@ -11,6 +11,16 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   
 });
 
+Ember.TEMPLATES["error"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  
+
+
+  data.buffer.push("<h2 class=\"text-warning\">/app/templates/error.hbs</h2>");
+  
+});
+
 Ember.TEMPLATES["event"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
 this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
@@ -78,22 +88,28 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
 function program1(depth0,data) {
   
   
-  data.buffer.push("<i class=\"fa fa-lg fa-calendar\"></i> ");
+  data.buffer.push("Home <i class=\"fa fa-home\"></i> ");
   }
 
 function program3(depth0,data) {
   
   
-  data.buffer.push("<i class=\"fa fa-lg fa-plus\"></i> ");
+  data.buffer.push("Events <i class=\"fa fa-calendar\"></i> ");
   }
 
 function program5(depth0,data) {
   
   
-  data.buffer.push("<i class=\"fa fa-lg fa-user\"></i> ");
+  data.buffer.push("New <i class=\"fa fa-plus\"></i> ");
   }
 
 function program7(depth0,data) {
+  
+  
+  data.buffer.push("Me <i class=\"fa fa-user\"></i> ");
+  }
+
+function program9(depth0,data) {
   
   var buffer = '', stack1, helper, options;
   data.buffer.push("\n		<li class=\"row-ev\">\n			<div class=\"col-pics\">\n				<img ");
@@ -113,34 +129,47 @@ function program7(depth0,data) {
   data.buffer.push("</h3>\n				</div>\n				<div class=\"info-others\">\n					<ul class=\"list-inline\">\n						<li><a href=\"\" class=\"ev-btn\"><i class=\"fa fa-eye\"></i></a></li>\n						<li><a href=\"\" class=\"ev-btn\"><i class=\"fa fa-star\"></i></a></li>\n						<li><a href=\"\" class=\"ev-btn\"><i class=\"fa fa-share-square-o\"></i></a></li>\n						<li><a href=\"\" class=\"ev-btn\"><i class=\"fa fa-map-marker\"></i> <span class=\"ev-map-link\">");
   stack1 = helpers._triageMustache.call(depth0, "address.full", {hash:{},hashTypes:{},hashContexts:{},contexts:[depth0],types:["ID"],data:data});
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
-  data.buffer.push("</span></a></li>\n					</ul>\n				</div>\n			</div>\n			<div class=\"col-view pull-right\">\n				");
+  data.buffer.push("</span></a></li>\n					</ul>\n				</div>\n			</div>\n			<div class=\"col-view\">\n				");
   stack1 = (helper = helpers['link-to'] || (depth0 && depth0['link-to']),options={hash:{
     'class': ("ev-btn-view")
-  },hashTypes:{'class': "STRING"},hashContexts:{'class': depth0},inverse:self.noop,fn:self.program(8, program8, data),contexts:[depth0,depth0],types:["STRING","ID"],data:data},helper ? helper.call(depth0, "event", "id", options) : helperMissing.call(depth0, "link-to", "event", "id", options));
+  },hashTypes:{'class': "STRING"},hashContexts:{'class': depth0},inverse:self.noop,fn:self.program(10, program10, data),contexts:[depth0,depth0],types:["STRING","ID"],data:data},helper ? helper.call(depth0, "event", "id", options) : helperMissing.call(depth0, "link-to", "event", "id", options));
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
   data.buffer.push("			\n			</div>\n		</li>\n		");
   return buffer;
   }
-function program8(depth0,data) {
+function program10(depth0,data) {
   
   
   data.buffer.push("<i class=\"fa fa-chevron-circle-right\"></i>");
   }
 
-  data.buffer.push("<nav class=\"eg-navbar-main\" role=\"navigation\">\n	<div class=\"container-fluid\">\n		<!-- Brand and toggle get grouped for better mobile display -->\n		<div class=\"navbar-header\">\n			<button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n				<span class=\"sr-only\">Toggle navigation</span>\n				<span class=\"icon-bar\"></span>\n				<span class=\"icon-bar\"></span>\n				<span class=\"icon-bar\"></span>\n			</button>\n			<a class=\"navbar-brand\" href=\"#\">EMBERIO</a>\n		</div>\n\n		<!-- Collect the nav links, forms, and other content for toggling -->\n		<div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n			<ul class=\"nav navbar-nav\">\n				<li>");
-  stack1 = (helper = helpers['link-to'] || (depth0 && depth0['link-to']),options={hash:{},hashTypes:{},hashContexts:{},inverse:self.noop,fn:self.program(1, program1, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "events", options) : helperMissing.call(depth0, "link-to", "events", options));
+  data.buffer.push("<nav class=\"eg-navbar-main\" role=\"navigation\">\n	<div class=\"container-fluid\">\n		<!-- Brand and toggle get grouped for better mobile display -->\n		<div class=\"navbar-header\">\n			<button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n				<span class=\"sr-only\">Toggle navigation</span>\n				<span class=\"icon-bar\"></span>\n				<span class=\"icon-bar\"></span>\n				<span class=\"icon-bar\"></span>\n			</button>\n			<a class=\"navbar-brand\" href=\"#\">EMBERIO</a>\n		</div>\n\n		<!-- Collect the nav links, forms, and other content for toggling -->\n		<div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n			<ul class=\"nav navbar-nav\">\n				<li class=\"active\">");
+  stack1 = (helper = helpers['link-to'] || (depth0 && depth0['link-to']),options={hash:{},hashTypes:{},hashContexts:{},inverse:self.noop,fn:self.program(1, program1, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "home", options) : helperMissing.call(depth0, "link-to", "home", options));
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
   data.buffer.push("</li>                        \n				<li>");
-  stack1 = (helper = helpers['link-to'] || (depth0 && depth0['link-to']),options={hash:{},hashTypes:{},hashContexts:{},inverse:self.noop,fn:self.program(3, program3, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "event.new", options) : helperMissing.call(depth0, "link-to", "event.new", options));
+  stack1 = (helper = helpers['link-to'] || (depth0 && depth0['link-to']),options={hash:{},hashTypes:{},hashContexts:{},inverse:self.noop,fn:self.program(3, program3, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "events", options) : helperMissing.call(depth0, "link-to", "events", options));
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
   data.buffer.push("</li>                        \n				<li>");
-  stack1 = (helper = helpers['link-to'] || (depth0 && depth0['link-to']),options={hash:{},hashTypes:{},hashContexts:{},inverse:self.noop,fn:self.program(5, program5, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "users", options) : helperMissing.call(depth0, "link-to", "users", options));
+  stack1 = (helper = helpers['link-to'] || (depth0 && depth0['link-to']),options={hash:{},hashTypes:{},hashContexts:{},inverse:self.noop,fn:self.program(5, program5, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "event.new", options) : helperMissing.call(depth0, "link-to", "event.new", options));
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
-  data.buffer.push("</li>\n			</ul>\n			<p class=\"navbar-text\">Signed in as Mark Otto</p>\n		</div><!-- /.navbar-collapse -->\n	</div><!-- /.container-fluid -->\n</nav>\n<div class=\"eg-container\">\n	<ul>\n		");
-  stack1 = helpers.each.call(depth0, {hash:{},hashTypes:{},hashContexts:{},inverse:self.noop,fn:self.program(7, program7, data),contexts:[],types:[],data:data});
+  data.buffer.push("</li>                        \n				<li>");
+  stack1 = (helper = helpers['link-to'] || (depth0 && depth0['link-to']),options={hash:{},hashTypes:{},hashContexts:{},inverse:self.noop,fn:self.program(7, program7, data),contexts:[depth0],types:["STRING"],data:data},helper ? helper.call(depth0, "users", options) : helperMissing.call(depth0, "link-to", "users", options));
+  if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
+  data.buffer.push("</li>\n			</ul>\n		</div><!-- /.navbar-collapse -->\n	</div><!-- /.container-fluid -->\n</nav>\n<div class=\"eg-container\">\n	<ul>\n		");
+  stack1 = helpers.each.call(depth0, {hash:{},hashTypes:{},hashContexts:{},inverse:self.noop,fn:self.program(9, program9, data),contexts:[],types:[],data:data});
   if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
   data.buffer.push("\n	</ul>\n</div>");
   return buffer;
+  
+});
+
+Ember.TEMPLATES["events/error"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  
+
+
+  data.buffer.push("<h2 class=\"text-warning\">/app/templates/events/error.hbs</h2>");
   
 });
 

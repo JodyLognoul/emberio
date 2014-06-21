@@ -1,0 +1,36 @@
+@import mixins
+
+/*==============================
+ *=            MAIN            =
+ *==============================*/
+
+/*==========  SIZES  ==========*/
+$main-grid-float-breakpoint-max	: 270px
+$main-height					: 100px
+
+/*==========  COLORS  ==========*/
+$__main-bg 					: #323C3E
+$__main-links				: #fff
+/* ____________________________ */
+$main-bg					: $__main-bg
+$main-border				: darken($main-bg, 6.5%)
+$main-brand-color			: $__main-links
+$main-brand-hover-bg		: #bada55
+$main-brand-hover-color		: #bada55
+$main-color					: $__main-links
+$main-link-active-bg		: darken($main-bg, 6.5%)
+$main-link-active-color		: darken($__main-links, 50%)
+$main-link-color			: $__main-links
+$main-link-disabled-bg		: #bada55
+$main-link-disabled-color	: #bada55
+$main-link-hover-bg			: #bada55
+$main-link-hover-color		: #bada55
+$main-toggle-border-color	: #bada55
+$main-toggle-hover-bg		: #bada55
+$main-toggle-icon-bar-bg	: #bada55
+
+%eg-navbar-custom-style-main
+	@include custom-navbar-style($main-grid-float-breakpoint-max, $main-bg, $main-border, $main-brand-color, $main-brand-hover-bg, $main-brand-hover-color, $main-color, $main-link-active-bg, $main-link-active-color, $main-link-color, $main-link-disabled-bg, $main-link-disabled-color, $main-link-hover-bg, $main-link-hover-color, $main-toggle-border-color, $main-toggle-hover-bg, $main-toggle-icon-bar-bg)
+
+%eg-navbar-custom-size-main
+	@include custom-navbar-size($main-grid-float-breakpoint-max, $main-height)

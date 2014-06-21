@@ -14,11 +14,11 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li>{{#link-to 'events'}}<i class="fa fa-lg fa-calendar"></i> {{/link-to}}</li>                        
-				<li>{{#link-to 'event.new'}}<i class="fa fa-lg fa-plus"></i> {{/link-to}}</li>                        
-				<li>{{#link-to 'users'}}<i class="fa fa-lg fa-user"></i> {{/link-to}}</li>
+				<li class="active">{{#link-to 'home'}}Home <i class="fa fa-home"></i> {{/link-to}}</li>                        
+				<li>{{#link-to 'events'}}Events <i class="fa fa-calendar"></i> {{/link-to}}</li>                        
+				<li>{{#link-to 'event.new'}}New <i class="fa fa-plus"></i> {{/link-to}}</li>                        
+				<li>{{#link-to 'users'}}Me <i class="fa fa-user"></i> {{/link-to}}</li>
 			</ul>
-			<p class="navbar-text">Signed in as Mark Otto</p>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
 </nav>
@@ -46,7 +46,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-view pull-right">
+			<div class="col-view">
 				{{#link-to 'event' id class="ev-btn-view"}}<i class="fa fa-chevron-circle-right"></i>{{/link-to}}			
 			</div>
 		</li>
