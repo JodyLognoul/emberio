@@ -22,6 +22,13 @@ App.Router.map(function() {
         this.route('events');
     });
 
+    this.resource('auth', function(){
+        this.route('login');
+        this.route('signup');
+    });
+
+
+
 
 });
 

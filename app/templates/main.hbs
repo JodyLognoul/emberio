@@ -17,10 +17,8 @@
 				<li>{{#link-to 'main.events'}}<i class="fa fa-lg fa-calendar"></i> Events{{/link-to}}</li>
 				<li>{{#link-to 'me'}}<i class="fa fa-lg fa-user"></i> Me{{/link-to}}</li>
 			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><button type="button" class="btn btn-success navbar-btn">Login</button></li>
-				<li><button type="button" class="btn btn-warning navbar-btn">Sign up</button></li>
-			</ul>
+			{{#link-to 'auth.signup' class="btn btn-warning navbar-right navbar-btn"}}Sign up{{/link-to}}
+			{{#link-to 'auth.login' class="btn btn-success navbar-right navbar-btn"}}Login{{/link-to}}
 		</div>
 	</div>
 </nav>

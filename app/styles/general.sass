@@ -1,0 +1,46 @@
+@import settings
+@import navbars
+@import bootstrap
+@import variables
+
+/*==========  ALL  ==========*/
+body,html
+	height: 100%
+	font-size: $font-size
+	font-family: $font-family
+	font-weight: 200
+ul
+	list-style: none	
+	padding: 0
+
+/*==========  NAVBAR  ==========*/
+%eg-navbar
+	@extend .navbar
+	border-radius: 0
+	margin-bottom: 0
+	a,.dropdown
+		font-size: 0.9em
+	.navbar-brand
+		font-size: 1.2em
+	.navbar-btn
+		margin-left: 5px
+.eg-navbar-main
+	@extend %eg-navbar
+	@extend %eg-navbar-custom-style-main
+	@extend %eg-navbar-custom-size-main
+	
+.eg-navbar-event
+	@extend %eg-navbar
+	@extend %eg-navbar-custom-style-main
+	@extend %eg-navbar-custom-size-main
+	
+.eg-container,
+.eg-container-event
+	@extend .container
+
+.eg-container-event
+	padding-top: 10px
+
+/*==========  EMBER-VIEW  ==========*/
+.ember-view
+	height: 100%
