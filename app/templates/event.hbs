@@ -11,10 +11,14 @@
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
+				{{!-- back --}}
 				<li>{{#link-to 'main.events'}}<i class="fa fa-lg fa-chevron-circle-left"></i> {{/link-to}}</li>
-				<li class="active"><a href="#">Link</a></li>                        
-				<li class=""><a href="#">Link</a></li>                
-				<li class=""><a href="#">Link</a></li>                        
+				{{!-- event-menu --}}
+				<li>{{#link-to 'event.index'}}<i class="fa fa-lg fa-bookmark"></i> Preview{{/link-to}}</li>
+				<li>{{#link-to 'event.map'}}<i class="fa fa-lg fa-map-marker"></i> Map{{/link-to}}</li>
+				<li>{{#link-to 'event.chat'}}<i class="fa fa-lg fa-comments"></i> Chat{{/link-to}}</li>
+				<li>{{#link-to 'event.members'}}<i class="fa fa-lg fa-users"></i> Members{{/link-to}}</li>
+				<li>{{#link-to 'event.join'}}<i class="fa fa-lg fa-sign-in"></i> Join !{{/link-to}}</li>
 			</ul>
 		</div>
 	</div>

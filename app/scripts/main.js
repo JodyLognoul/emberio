@@ -12,7 +12,10 @@ App.Router.map(function() {
         this.route('events');
     });
     this.resource('event', { path:'/event/:event_id'}, function(){
-        this.route('edit');
+        this.route('map');
+        this.route('chat');
+        this.route('members');
+        this.route('join');
     });
 
 });
