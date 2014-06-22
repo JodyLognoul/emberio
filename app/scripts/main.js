@@ -18,6 +18,11 @@ App.Router.map(function() {
         this.route('join');
     });
 
+    this.resource('me', { path:'/me'}, function(){
+        this.route('events');
+    });
+
+
 });
 
 

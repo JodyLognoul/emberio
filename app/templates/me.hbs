@@ -1,0 +1,23 @@
+<nav class="eg-navbar-event" role="navigation">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				{{!-- back --}}
+				<li>{{#link-to 'main.events'}}<i class="fa fa-lg fa-chevron-circle-left"></i> {{/link-to}}</li>
+				{{!-- event-menu --}}
+				<li>{{#link-to 'me.index'}}<i class="fa fa-lg fa-user"></i> Me{{/link-to}}</li>
+				<li>{{#link-to 'me.events'}}<i class="fa fa-lg fa-calendar"></i> My Events{{/link-to}}</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+{{outlet}}

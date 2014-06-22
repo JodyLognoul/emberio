@@ -8,16 +8,20 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">EMBERIO</a>
+			<a class="navbar-brand" href="#">eG</a>
 		</div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
 			<ul class="nav navbar-nav">
 				<li>{{#link-to 'main.index'}}<i class="fa fa-lg fa-home"></i> Home{{/link-to}}</li>                        
 				<li>{{#link-to 'main.events'}}<i class="fa fa-lg fa-calendar"></i> Events{{/link-to}}</li>
+				<li>{{#link-to 'me'}}<i class="fa fa-lg fa-user"></i> Me{{/link-to}}</li>
 			</ul>
-		</div><!-- /.navbar-collapse -->
-	</div><!-- /.container-fluid -->
+			<ul class="nav navbar-nav navbar-right">
+				<li><button type="button" class="btn btn-success navbar-btn">Login</button></li>
+				<li><button type="button" class="btn btn-warning navbar-btn">Sign up</button></li>
+			</ul>
+		</div>
+	</div>
 </nav>
 {{outlet}}

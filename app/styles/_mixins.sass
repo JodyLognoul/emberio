@@ -1,25 +1,29 @@
 // == CUSTOM-NAVBAR-SIZE ==
-=custom-navbar-size($grid-float-breakpoint-max, $height)
+=custom-navbar-size($height)
 	$font-size-base				: 14px
 	$line-height-base			: 1.428571429  // 20/14
 	$line-height-computed		: floor(($font-size-base * $line-height-base)) // ~20px
 	$navbar-padding-vertical	: (($height - $line-height-computed) / 2)
-	
+	$padding-base-vertical		: 6px
+	$input-height-base			: ($line-height-computed + ($padding-base-vertical * 2) + 2)
+
 	min-height: $height
 	.navbar-nav
-		@media (min-width: $grid-float-breakpoint) 
-			> li
-				> a
-					padding-top: $navbar-padding-vertical
-					padding-bottom: $navbar-padding-vertical  
+		> li
+			> a
+				padding-top: $navbar-padding-vertical
+				padding-bottom: $navbar-padding-vertical  
 	.navbar-brand
 		height: $height
 		padding-top: $navbar-padding-vertical
 		padding-bottom: $navbar-padding-vertical
-
+	
+	.navbar-btn
+		margin-top: (($height - $input-height-base) / 2)
+		margin-bottom: (($height - $input-height-base) / 2)
 
 // == CUSTOM-NAVBAR-STYLE ==
-=custom-navbar-style($grid-float-breakpoint-max, $navbar-default-bg, $navbar-default-border, $navbar-default-brand-color, $navbar-default-brand-hover-bg, $navbar-default-brand-hover-color, $navbar-default-color, $navbar-default-link-active-bg, $navbar-default-link-active-color, $navbar-default-link-color, $navbar-default-link-disabled-bg, $navbar-default-link-disabled-color, $navbar-default-link-hover-bg, $navbar-default-link-hover-color, $navbar-default-toggle-border-color, $navbar-default-toggle-hover-bg, $navbar-default-toggle-icon-bar-bg )
+=custom-navbar-style($navbar-default-bg, $navbar-default-border, $navbar-default-brand-color, $navbar-default-brand-hover-bg, $navbar-default-brand-hover-color, $navbar-default-color, $navbar-default-link-active-bg, $navbar-default-link-active-color, $navbar-default-link-color, $navbar-default-link-disabled-bg, $navbar-default-link-disabled-color, $navbar-default-link-hover-bg, $navbar-default-link-hover-color, $navbar-default-toggle-border-color, $navbar-default-toggle-hover-bg, $navbar-default-toggle-icon-bar-bg )
 	background-color: $navbar-default-bg
 	border-color: $navbar-default-border
 	.navbar-brand 
@@ -71,27 +75,6 @@
 				background-color: $navbar-default-link-active-bg
 				color: $navbar-default-link-active-color
 
-		@media (max-width: $grid-float-breakpoint-max) 
-			// Dropdowns get custom display when collapsed
-			.open .dropdown-menu 
-				> li > a 
-					color: $navbar-default-link-color
-					&:hover,
-					&:focus 
-						color: $navbar-default-link-hover-color
-						background-color: $navbar-default-link-hover-bg
-				> .active > a 
-					&,
-					&:hover,
-					&:focus 
-						color: $navbar-default-link-active-color
-						background-color: $navbar-default-link-active-bg
-				> .disabled > a 
-					&,
-					&:hover,
-					&:focus 
-						color: $navbar-default-link-disabled-color
-						background-color: $navbar-default-link-disabled-bg
 	// Links in navbars
 	//
 	// Add a class to ensure links outside the navbar nav are colored correctly.
