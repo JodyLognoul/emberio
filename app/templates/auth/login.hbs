@@ -1,1 +1,24 @@
-<h2 class="text-warning">/app/templates/auth/login.hbs</h2>
+<div class="container">
+	{{#if session.isAuthenticated}}
+        <a {{ action 'invalidateSession' }} class="btn btn-danger navbar-btn navbar-right">Logout</a>
+	{{else}}
+        {{#link-to 'auth.login' class="btn btn-success navbar-btn navbar-right"}}Login{{/link-to}}
+	{{/if}}
+
+	{{#unless session.isAuthenticated}}
+        <div class="alert alert-info">
+          You can {{#link-to 'auth.login' classNames='alert-link'}}log in{{/link-to}} with login <code>letme</code> and password <code>in</code>.
+        </div>
+    {{/unless}}
+
+	<div class="login-container">
+		{{#link-to 'main'}}<div class="avatar"></div>{{/link-to}}
+		<div class="form-box">
+			<form {{action 'authenticate' on='submit'}}>
+				{{input placeholder="Username" value=identification}}
+				{{input placeholder="Password" value=password type='password'}}
+				<button type="submit" class="btn btn-success btn-block login">Login</button>
+			</form>
+		</div>
+	</div>
+</div>

@@ -2,11 +2,30 @@
 /* jshint camelcase: false */
 
 'use strict';
+
+/*==========  EMBER.SIMPLEAUTH - INITIALIZER  ==========*/
+Ember.Application.initializer({
+    name: 'authentication',
+    initialize: function(container, application) {
+        Ember.SimpleAuth.Authenticators.OAuth2.reopen({
+            serverTokenEndpoint: 'http://local.egam.io/auth'
+        });
+
+        Ember.SimpleAuth.setup(container, application,{
+            crossOriginWhitelist: ['http://local.egam.io/auth'],
+            authenticationRoute: 'auth.login',
+            routeAfterAuthentication: 'main'
+        });
+
+    }
+});
+
+/*==========  APPLICATION CREATE  ==========*/
 var App = Ember.Application.create({
     rootElement: 'body'
 });
 
-// ROUTES
+/*==========  ROUTES  ==========*/
 App.Router.map(function() {
     this.resource('main', { path:'/'}, function(){
         this.route('events');
@@ -26,13 +45,9 @@ App.Router.map(function() {
         this.route('login');
         this.route('signup');
     });
-
-
-
-
 });
 
-
+/*==========  ROUTES MODEL  ==========*/
 App.EventRoute = Ember.Route.extend({
     model: function(params) {
         return Ember.$.getJSON('http://local.egam.io/api/event/' + params.event_id).then(function(data) {
@@ -43,7 +58,7 @@ App.EventRoute = Ember.Route.extend({
     }
 });
 
-App.MainEventsRoute = Ember.Route.extend({
+App.MainEventsRoute = Ember.Route.extend(Ember.SimpleAuth.AuthenticatedRouteMixin,{
     model: function() {
         return Ember.$.getJSON('http://local.egam.io/api/event').then(function(data) {
             data.forEach(function(element, index){
@@ -54,3 +69,22 @@ App.MainEventsRoute = Ember.Route.extend({
         });
     }
 });
+
+
+/*==========  SIMPLE-AUTH  ==========*/
+App.ApplicationRoute = Ember.Route.extend(Ember.SimpleAuth.ApplicationRouteMixin);
+
+App.AuthLoginController  = Ember.Controller.extend(Ember.SimpleAuth.LoginControllerMixin, {
+    authenticatorFactory: 'ember-simple-auth-authenticator:oauth2-password-grant'
+});
+
+
+
+
+
+
+
+
+
+
+
